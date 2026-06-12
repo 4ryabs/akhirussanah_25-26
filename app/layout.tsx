@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     siteName: "Akhirussanah TK Al Irsyad",
     images: [
       {
-        url: "/images/embed.png", 
+        url: "/images/thumbnail.png", 
         width: 1200,
         height: 630,
         alt: "Cover Undangan Akhirussanah",
