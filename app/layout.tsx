@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import AudioPlayer from "@/components/audio_player"; 
+import AudioPlayer from "@/components/audio_player";
 
 export const metadata: Metadata = {
   title: "Akhirussanah TK Al Irsyad",
@@ -13,19 +13,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="id">
+    <html lang="en">
       {/* 1. Body dikasih warna abu-abu dan flex tengah khusus buat layar laptop */}
       <body className="antialiased bg-gray-200 flex justify-center items-center min-h-screen">
-        
-        {/* 2. WADAH FRAME HP VIRTUAL */}
-        {/* Di HP biasa: full screen. Di Desktop (sm): tinggi 95%, melengkung, ada border hitam kayak case HP */}
-        <div 
-            className="relative w-[50dvh] max-w-md h-[100dvh] sm:h-[100dvh] sm:rounded-[12px] sm:border-[8px] sm:border-gray-800 shadow-2xl overflow-hidden bg-white"
-            // Trik CSS Tingkat Dewa: Biar elemen 'fixed' (navigasi & tombol musik) nggak lari keluar dari bingkai HP ini!
-            style={{ transform: "translateZ(0)" }}
+        <div
+          className="relative w-full h-[100dvh] md:w-[40dvh] md:min-w-[50dvh] md:max-w-[40dvh] md:h-[100dvh] md:rounded-[12px] md:border-[10px] md:border-gray-800 shadow-2xl overflow-hidden bg-white"
+          style={{ transform: "translateZ(0)" }}
         >
-            {children}
-            <AudioPlayer />
+          {children}
+
+          <AudioPlayer />
         </div>
 
       </body>

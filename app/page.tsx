@@ -19,7 +19,7 @@ const poppins = Poppins({
 function WelcomeContent() {
   const searchParams = useSearchParams();
   const router = useRouter();
-  const guestName = searchParams.get("to") || "Tamu Undangan";
+  const guestName = searchParams.get("to") || "Siswa Siswi TK B";
 
   return (
     // bg-gray-100 dihapus biar Bg.png kelihatan
@@ -85,7 +85,7 @@ function WelcomeContent() {
         />
       </div>
 
-      <div className="absolute bottom-[32%] left-0 w-full h-[75vh] flex flex-col items-center justify-end z-30 px-4 pointer-events-none">
+      <div className="absolute bottom-[33%] left-0 w-full h-[75vh] flex flex-col items-center justify-end z-30 px-4 pointer-events-none">
 
         <div className="relative w-full h-[90%] mb-4 animate-pop flex-shrink-0">
           <Image
@@ -104,7 +104,8 @@ function WelcomeContent() {
             style={{ WebkitTextStroke: "0.4px #ffffe0" }}
           >
             <p>Kepada Yth.</p>
-            <p>Bapak/Ibu/Saudara/i</p>
+            <p>Bapak/Ibu</p>
+            <p>Orang Tua/Wali Murid</p>
           </div>
 
           <h1
