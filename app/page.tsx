@@ -22,7 +22,6 @@ function WelcomeContent() {
   const guestName = searchParams.get("to") || "Siswa Siswi TK B";
 
   return (
-    // bg-gray-100 dihapus biar Bg.png kelihatan
     <main className="relative w-full max-w-md h-[100dvh] mx-auto overflow-hidden bg-white shadow-2xl">
 
       {/* 1. Background */}

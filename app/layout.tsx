@@ -3,8 +3,25 @@ import "./globals.css";
 import AudioPlayer from "@/components/audio_player";
 
 export const metadata: Metadata = {
-  title: "Akhirussanah TK Al Irsyad",
-  description: "Undangan Akhirussanah TK B Al Irsyad Al Islamiyyah Purwokerto",
+  metadataBase: new URL("https://akhirussanah-tk-alirsyad.netlify.app"), // Ganti kalau nama link-mu beda
+  title: "Undangan Akhirussanah TK Al Irsyad",
+  description: "Merangkai Kenangan, Tumbuh Bersama Bumi. Ahad, 14 Juni 2026 di Gedung Roedhiro Unsoed.",
+  openGraph: {
+    title: "Undangan Akhirussanah TK Al Irsyad",
+    description: "Merangkai Kenangan, Tumbuh Bersama Bumi. Ahad, 14 Juni 2026 di Gedung Roedhiro Unsoed.",
+    url: "https://akhirussanah-tk-alirsyad.netlify.app",
+    siteName: "Akhirussanah TK Al Irsyad",
+    images: [
+      {
+        url: "/images/embed.png", 
+        width: 1200,
+        height: 630,
+        alt: "Cover Undangan Akhirussanah",
+      },
+    ],
+    locale: "id_ID",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
