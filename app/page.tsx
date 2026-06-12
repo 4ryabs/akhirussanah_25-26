@@ -85,7 +85,7 @@ function WelcomeContent() {
         />
       </div>
 
-      <div className="absolute bottom-[35%] left-0 w-full h-[75vh] flex flex-col items-center justify-end z-30 px-4 pointer-events-none">
+      <div className="absolute bottom-[32%] left-0 w-full h-[75vh] flex flex-col items-center justify-end z-30 px-4 pointer-events-none">
 
         <div className="relative w-full h-[90%] mb-4 animate-pop flex-shrink-0">
           <Image

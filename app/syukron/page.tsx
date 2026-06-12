@@ -17,7 +17,7 @@ const poppins = Poppins({
 
 export default function SyukronPage() {
     return (
-        <main className="relative w-full max-w-md h-[100dvh] mx-auto overflow-hidden bg-white shadow-2xl">
+        <main className="relative w-full max-w-md h-full mx-auto overflow-hidden bg-white shadow-2xl">
 
             {/* 1. Background */}
             <div className="absolute inset-0 w-full h-full z-0">
@@ -30,7 +30,7 @@ export default function SyukronPage() {
                     alt="Header"
                     fill
                     sizes="(max-width: 768px) 100vw, 448px"
-                    className="object-cover"
+                    className="object-cover object-top"
                 />
             </div>
 
@@ -52,14 +52,6 @@ export default function SyukronPage() {
                     sizes="(max-width: 768px) 100vw, 448px"
                     className="object-contain object-center"
                 />
-            </div>
-
-            <div className="absolute bottom-[28%] left-0 w-full flex justify-center z-50 pointer-events-none animate-in-bottom-short">
-                <a
-                    className={`pointer-events-auto min-w-[400px] bg-[#3B542E]/80 backdrop-blur-sm border-[1.5px] border-[#ffffe0]/20 text-[#ffffe0] font-bold text-[13px] text-white py-3 px-6 rounded-full shadow-xl transition-all duration-300 hover:scale-105 active:scale-95 flex items-center justify-center gap-2 ${poppins.className}`}
-                >
-                    Made by TU KB & TK Al Irsyad Al Islamiyyah Purwokerto
-                </a>
             </div>
 
             <div className="absolute inset-0 w-full h-full animate-in-left pointer-events-none z-10">
@@ -91,13 +83,14 @@ export default function SyukronPage() {
 
             <FloatingNav />
 
-            <div className="absolute inset-0 w-full h-full animate-in-bottom-short z-[999] pointer-events-none">
+            <div className="absolute inset-0 w-full h-full animate-in-bottom-short z-[99] pointer-events-none">
                 <Image
                     src="/images/gedung.png"
                     alt="Gedung KB & TK Al Irsyad"
                     fill
-                    priority // Memaksa untuk me-render strip rumput ini
+                    priority
                     sizes="(max-width: 768px) 100vw, 448px"
+                    // PERBAIKAN: object-cover diganti balik ke object-contain
                     className="object-contain object-bottom"
                 />
             </div>

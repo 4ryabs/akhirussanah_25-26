@@ -17,7 +17,7 @@ const poppins = Poppins({
 
 export default function SalamPage() {
   return (
-    <main className="relative w-full max-w-md h-[100dvh] mx-auto overflow-hidden bg-white shadow-2xl">
+    <main className="relative w-full max-w-md h-full mx-auto overflow-hidden bg-white shadow-2xl">
 
       {/* 1. Background */}
       <div className="absolute inset-0 w-full h-full z-0">
@@ -30,7 +30,7 @@ export default function SalamPage() {
           alt="Header"
           fill
           sizes="(max-width: 768px) 100vw, 448px"
-          className="object-cover"
+          className="object-cover object-top"
         />
       </div>
 
@@ -73,7 +73,7 @@ export default function SalamPage() {
 
       <div className="absolute w-full h-full animate-pop pointer-events-none z-20">
         <Image
-          src="/images/text_salam.png"
+          src="/images/text_salam1.png"
           alt="Text Salam"
           fill
           sizes="(max-width: 768px) 100vw, 448px"
@@ -83,13 +83,14 @@ export default function SalamPage() {
 
       {/* 5. Floating Navigation Bar - z-40 (Tinggalkan saja, kemungkinan z-index-nya lebih tinggi dalam komponennya) */}
       <FloatingNav />
-      <div className="absolute inset-0 w-full h-full animate-in-bottom-short z-[999] pointer-events-none">
+      <div className="absolute inset-0 w-full h-full animate-in-bottom-short z-[99] pointer-events-none">
         <Image
           src="/images/gedung.png"
           alt="Gedung KB & TK Al Irsyad"
           fill
-          priority // Memaksa untuk me-render strip rumput ini
+          priority
           sizes="(max-width: 768px) 100vw, 448px"
+          // PERBAIKAN: object-cover diganti balik ke object-contain
           className="object-contain object-bottom"
         />
       </div>
